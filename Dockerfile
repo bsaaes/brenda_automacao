@@ -3,7 +3,7 @@ FROM alpine:latest as builder
 # Instalando dependências
 RUN apk add --no-cache wget unzip curl build-base libffi-dev openssl-dev
 
-# Instalando Terraforma
+# Instalando Terraform
 RUN wget https://releases.hashicorp.com/terraform/1.8.2/terraform_1.8.2_linux_amd64.zip && \
     unzip terraform_1.8.2_linux_amd64.zip && \
     mv terraform /usr/local/bin/ && \
